@@ -48,15 +48,15 @@ Using the program provided on [Plunker](http://plnkr.co/edit/bURBD9KioV7vxZwJMp6
  - It appears the Reset button does not work, how can this be fixed?
  - Users are hitting Reset by accident, space the buttons further apart and adjust size of Reset and make Submit more prominent.
  - People are submitting information without reviewing their entry information.  Please add in a message before the form is submitted.
-​
-​
+
+
 ####Pick a Winner – Batch Programming Exercise
 Because `PowerOn` is a proprietary language we adapted this program to pseudo code like language with a hint of javascript.  The code has been commented to provide some guidance.  Use a text editor to write your code to address the bugs and new tasks.
-​
+
 **Tasks**
-​
+
  - 3 new reports are needed
-​
+
 
     *NOTE:  between the page margins output is limited to 100 characters per line or the report terminates in error.*
 ​
