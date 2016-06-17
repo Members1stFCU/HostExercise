@@ -4,10 +4,9 @@ The goal of the programming exercises is to provide a foundation for the technic
 ​
 There are two exercises:
 ​
-1.	Sweepstakes – Submit an Entry
-2.	Sweepstakes – Pick a Winner
-​
-​
+ - Sweepstakes – Submit an Entry
+ - Sweepstakes – Pick a Winner
+
 Details and instructions for each are provided in this document.  Please submit your completed exercise prior to the interview so our team has time to review your completed work.
 ​
 Please let us know if you do not have access to the resources required to complete these exercises and we will schedule time at our facilities to allow you time to work on the exercise prior to the interview.
