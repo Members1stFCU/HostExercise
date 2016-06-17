@@ -1,0 +1,97 @@
+/*
+Given
+-----
+Array of Employees
+Array of Entires
+
+
+Rules
+Process the entries against two business rules
+ - Entry can't be an employee
+ - Entry has to be over 18
+
+Winner Function
+ - Random winner selection from valid entries (some method of random number)
+*/
+
+
+program RunLottery {
+
+	//globals
+
+	//arrays for holding entries
+	entryNames[]
+	entryDateOfBirths[]
+	entryEmails[]
+	entryPhoneNumbers[]
+	entryEmployeeIds[]
+	totalEntries = 0
+
+	//array for holding employee data
+	employeeIds[]
+	totalEmployees = 0
+
+	entryCount = 0
+
+	invalidAge = false
+	isEmployee = false
+
+	winnerIndex = 0
+
+	call GetEntries()
+	call GetEmployees()
+	call ValidateEntries()
+	call GetWinner()
+
+	function GetEntries{
+		//this function fills entry arrays with data from a data source
+		//given 1, John Smith, 1/1/1980, john@smith.com, and 1800-Smi-thco
+		//entryEmployeeId[0] = 1
+		//entryNames[0] = "John Smith"
+		//entryDateOfBirths[0] = '1/1/1980'
+		//entryEmails[0] = 'john@smith'
+		//entryPhoneNumbers[0] = '1800Smithco'
+		//totalEntries = totalEntries + 1
+	}
+
+	function GetEmployees{
+		//this function fills employee arrays with data from a data source
+		//given employeeId: 1
+		//employeeIds[0] = 1
+		//totalEmployees = totalEmployees + 1
+	}
+
+	function ValidateEntries{
+		for entryCount = 0 to totalEntries {
+			call isEmp
+			call IsOver18
+
+			if(isEmployee OR isEmployee){
+				if(isEmployee){
+
+				}
+				else if(invalidAge){
+
+				}
+			}
+			isEmployee = false
+		}
+	}
+
+	function IsEmp{
+		//todo calculate isEmployee
+	}
+
+	function IsOver18{
+		//this date math results in years
+		if((currentDate - entryDateOfBirths[entryCount]) < 18){
+			invalidAge = true
+		}
+	}
+
+	function GetWinner{
+		//call RollManySidedDie  //sets winnerIndex to random number from 0 to totalValidEntries
+
+
+	}
+}

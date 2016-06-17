@@ -1,0 +1,92 @@
+<!--
+  This file is also located here:
+  http://plnkr.co/edit/bURBD9KioV7vxZwJMp6Q?p=info
+
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        margin: 20px;
+        font-family:arial;
+      }
+      form{
+        border:solid 1px #ccc;
+        padding:20px;
+      }
+      div{
+        margin: 10px 0px;
+        padding: 10px 0px;
+      }
+      input, button{
+        font-size:18px;
+      }
+    </style>
+    <script type="text/javascript">
+      document.getElementById("reset").onclick = function(){
+        doucment.getElementById("name").value = "";
+        doucment.getElementById("address").value = "";
+        doucment.getElementById("birthDate").value = "";
+        doucment.getElementById("email").value = "";
+      };
+    </script>
+  </head>
+
+  <body>
+    <h1>Sweepstakes</h1>
+    <form>
+      <div>
+        <label style="font-size:12px">Name</label>
+        <input type="text" id="name"/>
+      </div>
+      <div>
+        <label style="font-size:12px">Address</label>
+        <input type="text" id="address"/>
+      </div>
+      <div>
+        <label style="font-size:12px">Birth Date</label>
+        <input type="text" id="birthDate"/>
+      </div>
+      <div>
+        <label style="font-size:12px">Email</label>
+        <input type="text" id="email"/>
+      </div>
+      <div style="border-top: 1px #ccc solid">
+        <button id="reset" type="button" disabled>
+          Reset
+        </button>
+        <button type="submit" id="submit" disabled>
+          Submit
+        </button>
+      </div>
+    </form>
+    <script type="text/javascript">
+      
+      var validation = function(){
+        var nameHasValue = document.getElementById("name").value !== "";
+        var addressHasValue = document.getElementById("address").value !== "";
+        var birthDateHasValue = document.getElementById("birthDate").value !== "";
+        var emailHasValue = document.getElementById("email").value !== "";
+        
+        if(nameHasValue || addressHasValue || birthDateHasValue || emailHasValue){
+          document.getElementById("reset").disabled = false;
+        }
+        else{
+          document.getElementById("reset").disabled = true;
+        }
+        
+        if(nameHasValue && addressHasValue && birthDateHasValue && emailHasValue){
+          document.getElementById("submit").disabled = false;  
+        }else{
+          document.getElementById("submit").disabled = true;
+        }
+      }
+      document.getElementById("name").onchange = validation;
+      document.getElementById("address").onchange = validation;
+      document.getElementById("birthDate").onchange = validation;
+      document.getElementById("email").onchange = validation;
+      
+    </script>
+  </body>
+</html>
