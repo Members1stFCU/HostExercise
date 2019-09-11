@@ -43,8 +43,10 @@ program RunLottery {
 	call ValidateEntries()
 	call GetWinner()
 
+	//This function fills entry arrays with data from a data source.
+	//For this exercise the commented-out pseudo code below
+	//is adequate for showing data assignments from the data source.
 	function GetEntries{
-		//this function fills entry arrays with data from a data source
 		//given 1, John Smith, 1/1/1980, john@smith.com, and 1800-Smi-thco
 		//entryEmployeeId[0] = 1
 		//entryNames[0] = "John Smith"
@@ -53,9 +55,11 @@ program RunLottery {
 		//entryPhoneNumbers[0] = '1800Smithco'
 		//totalEntries = totalEntries + 1
 	}
-
+	
+	//This function fills employee arrays with data from a data source.
+	//For this exercise the commented-out pseudo code below
+	//is adequate for showing data assignments from the data source.
 	function GetEmployees{
-		//this function fills employee arrays with data from a data source
 		//given employeeId: 1
 		//employeeIds[0] = 1
 		//totalEmployees = totalEmployees + 1
